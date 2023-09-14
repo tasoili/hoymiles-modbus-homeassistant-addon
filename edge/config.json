@@ -1,0 +1,55 @@
+{
+  "name": "Hoymiles Modbus DTU Solar: Home Assistant Add-on",
+  "description": "Get solar data using direct communication with Hoymiles DTU by Modbus RTU or TCP interface",
+  "image": "banny310/hoymiles-modbus-{arch}",
+  "version": "1.0.0-beta",
+  "slug": "hoymiles-modbus",
+  "url": "https://github.com/banny310/hoymiles-modbus-homeassistant-addon",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armv7"
+  ],
+  "startup": "application",
+  "boot": "auto",
+  "hassio_api": false,
+  "homeassistant_api": false,
+  "hassio_role": "default",
+  "devicetree": false,
+  "services": [
+    "mqtt:need"
+  ],
+  "ingress": false,
+  "host_network": true,
+  "panel_icon": "mdi:solar-power",
+  "panel_title": "HoyMiles Solar Data Gateway",
+  "panel_admin": false,
+  "options": {
+    "dtu_mode": "Communicate mode by rs485 or tcp, ex.: rs485",
+    "dtu_mode_tcp": {
+      "host": "Hoymiles DTU internal network IP, ex.: 192.168.1.5",
+      "port": "Hoymiles DTU internal network port, default.: 10081"
+    },
+    "dtu_mode_rs485": {
+      "device": "RS485 reader COM port,  ex.: /dev/tty01",
+      "slave_id": "Hoymiles DTU slave identifier, ex.: 101"
+    },
+    "app": {
+      "pull_interval": "Data pull interval in seconds, ex.: 30 (default 60)"
+    }
+  },
+  "schema": {
+    "dtu_mode": "list(rs485|tcp)?",
+    "dtu_mode_tcp": {
+      "host": "str?",
+      "port": "port?"
+    },
+    "dtu_mode_rs485": {
+      "device": "str?",
+      "slave_id": "int?"
+    },
+    "app": {
+      "pull_interval": "int?"
+    }
+  }
+}
