@@ -1,5 +1,5 @@
 
-# Hoymiles DTU Solar Data Gateway Add-on
+# Hoymiles Modbus DTU Solar Data Gateway Add-on
 
 An application to read Hoymiles Gateway Solar Data using direct communication with Hoymiles DTU over Modbus RTU or TCP
 
