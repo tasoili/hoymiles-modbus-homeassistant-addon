@@ -2,7 +2,7 @@
   "name": "Hoymiles Modbus DTU Solar: Home Assistant Add-on",
   "description": "Get solar data using direct communication with Hoymiles DTU by Modbus RTU or TCP interface",
   "image": "banny310/hoymiles-modbus-{arch}",
-  "version": "1.0.1-beta",
+  "version": "1.0.1",
   "slug": "hoymiles-modbus",
   "url": "https://github.com/banny310/hoymiles-modbus-homeassistant-addon",
   "arch": [
