@@ -1,7 +1,10 @@
 # CHANGELOG
 
+## 1.0.2
+    - jvm memory limit
+
 ## 1.0.1
-    -first stable version
+    - first stable version
 
 ## 1.0.1-beta
     - fixes to infrequent errors
